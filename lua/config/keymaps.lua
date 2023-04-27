@@ -15,3 +15,10 @@ end
 
 map("n", "<leader>np", ":cd ~/Notes/Personal | e PLANNING.md\n", { desc = "load personal notes" })
 map("n", "<leader>nc", ":cd ~/Notes/Cisco | e PLANNING.md\n", { desc = "load Cisco notes" })
+
+vim.keymap.set(
+  "n",
+  "<leader>sx",
+  require("telescope.builtin").resume,
+  { noremap = true, silent = true, desc = "Resume" }
+)
