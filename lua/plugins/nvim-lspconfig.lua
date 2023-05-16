@@ -4,7 +4,13 @@ return {
     opts = {
       servers = {
         pyright = {},
-        yamlls = {},
+        yamlls = {
+          settings = {
+            yaml = {
+              keyOrdering = false,
+            },
+          },
+        },
         --gopls = {},
         --ruby_ls = {},
         diagnosticls = {},
