@@ -1,6 +1,7 @@
 return {
   {
     "alexghergh/nvim-tmux-navigation",
+    enabled = false,
     lazy = false,
     keys = {
       {
