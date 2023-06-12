@@ -6,6 +6,8 @@ return {
       local nls = require("null-ls")
       return {
         sources = {
+          nls.builtins.diagnostics.mypy,
+          nls.builtins.diagnostics.ruff,
           nls.builtins.diagnostics.hadolint,
           --nls.builtins.diagnostics.markdownlint,
           nls.builtins.diagnostics.shellcheck,

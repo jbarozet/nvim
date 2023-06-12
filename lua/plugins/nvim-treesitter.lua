@@ -5,6 +5,7 @@ return {
       ensure_installed = {
         "bash",
         "css",
+        "python",
         "dockerfile",
         "go",
         "hcl",
