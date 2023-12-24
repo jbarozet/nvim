@@ -16,15 +16,6 @@ keymap.set("n", "-", "<C-x>")
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
--- New tab
-keymap.set("n", "te", ":tabedit")
-keymap.set("n", "<tab>", ":tabnext<Return>", opts)
-keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
-
--- Split window
-keymap.set("n", "ss", ":split<Return>", opts)
-keymap.set("n", "sv", ":vsplit<Return>", opts)
-
 -- Move window
 keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
@@ -36,10 +27,18 @@ keymap.set("n", "sc", "<C-w>c")
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- window management
+-- keymap.set("n", "ss", ":split<Return>", opts)
+-- keymap.set("n", "sv", ":vsplit<Return>", opts)
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
+keymap.set("n", "<C-left>", "1<C-w>>", { noremap = true, silent = true })
+keymap.set("n", "<C-right>", "1<C-w><", { noremap = true, silent = true })
+-- keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]]) -- make the window biger vertically
+-- keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]]) -- make the window smaller vertically
+-- keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]]) -- make the window bigger horizontally by pressing shift and =
+-- keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]]) -- make the window smaller horizontally by pressing shift and -
 
 -- Tab Management
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
@@ -47,7 +46,6 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
-
 
 -- vim-tmux-navigator
 keymap.set("n", "<C-h>", "<Cmd>TmuxNavigateLeft<CR>", { silent = true })
