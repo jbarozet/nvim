@@ -73,6 +73,12 @@ return {
 			on_attach = on_attach,
 		})
 
+		-- configure ansible server
+		lspconfig["ansiblels"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		-- configure html server
 		lspconfig["html"].setup({
 			capabilities = capabilities,
