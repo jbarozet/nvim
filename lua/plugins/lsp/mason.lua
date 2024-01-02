@@ -30,6 +30,7 @@ return {
 				"pyright",
 				"ansiblels",
 				"terraformls",
+				"marksman",
 				"dockerls",
 				"tsserver",
 				"html",
