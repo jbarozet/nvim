@@ -7,6 +7,9 @@ return {
 
 		lint.linters_by_ft = {
 			python = { "flake8" },
+			markdown = { "markdownlint" },
+			ansible = { "ansible-lint" },
+			lua = { "selene", "luacheck" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },
 			javascriptreact = { "eslint_d" },

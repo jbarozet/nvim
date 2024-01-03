@@ -52,11 +52,14 @@ return {
 				"stylua", -- lua formatter
 				"isort", -- python formatter
 				"black", -- python formatter
+				"selene", -- lua linter
+				"luacheck", -- lua linter
 				"pylint", -- python linter
 				"flake8", -- python linter
 				"tflint", -- terraform Linter
+				"ansible-lint", -- ansible linter
+				"markdownlint", -- markdown linter
 				"eslint_d", -- js linter
-				"ansible-lint",
 			},
 		})
 	end,
