@@ -25,7 +25,10 @@ return {
 				-- ensure these language parsers are installed
 				ensure_installed = {
 					"python",
+					"terraform",
 					"json",
+					"markdown",
+					"markdown_inline",
 					"javascript",
 					"typescript",
 					"tsx",
@@ -33,8 +36,6 @@ return {
 					"html",
 					"css",
 					"prisma",
-					"markdown",
-					"markdown_inline",
 					"svelte",
 					"graphql",
 					"bash",

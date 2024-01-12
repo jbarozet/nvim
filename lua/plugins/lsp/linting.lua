@@ -9,6 +9,7 @@ return {
 			python = { "flake8" },
 			markdown = { "markdownlint" },
 			ansible = { "ansible-lint" },
+			terraform = { "tflint" },
 			lua = { "luacheck" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },
