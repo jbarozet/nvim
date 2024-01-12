@@ -57,6 +57,7 @@ return {
 				"pylint", -- python linter
 				"flake8", -- python linter
 				"tflint", -- terraform Linter
+				"yamllint", -- ansible linter
 				"ansible-lint", -- ansible linter
 				"markdownlint", -- markdown linter
 				"eslint_d", -- js linter
