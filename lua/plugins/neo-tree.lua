@@ -14,7 +14,7 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	config = function()
-		require("neo-tree").setuv({})
+		require("neo-tree").setup({})
 		vim.keymap.set("n", "<leader>ee", ":Neotree toggle<CR>", { desc = "Toggle file explorer" })
 		vim.keymap.set("n", "<leader>er", ":Neotree filesystem reveal left<CR>", { desc = "Reveal file explorer left" })
 		vim.keymap.set("n", "<leader>ex", ":Neotree close<CR>", {})
