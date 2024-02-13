@@ -47,6 +47,10 @@ vim.o.autoindent = true -- copy indent from current line when starting new one
 -- line wrapping
 vim.o.wrap = false -- disable line wrapping
 
+-- Folding
+vim.o.nofoldenable = true -- everything is open
+vim.o.foldlevelstart = 99
+
 -- search settings
 vim.o.ignorecase = true -- ignore case when searching
 vim.o.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
