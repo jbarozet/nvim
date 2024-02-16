@@ -16,6 +16,7 @@ return {
 	config = function()
 		require("neo-tree").setup({})
 		vim.keymap.set("n", "<leader>ee", ":Neotree toggle<CR>", { desc = "Toggle file explorer" })
+		vim.keymap.set("n", "<leader>ef", ":Neotree filesystem float<CR>", { desc = "Toggle file explorer (float)" })
 		vim.keymap.set("n", "<leader>er", ":Neotree filesystem reveal left<CR>", { desc = "Reveal file explorer left" })
 		vim.keymap.set("n", "<leader>ex", ":Neotree close<CR>", {})
 		vim.keymap.set("n", "<leader>et", ":Neotree current<CR>", {})
