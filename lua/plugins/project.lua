@@ -1,13 +1,13 @@
 return {
-  "ahmedkhalf/project.nvim",
-  opts = {},
-  event = "VeryLazy",
-  config = function(_, opts)
-    require("project_nvim").setup(opts)
-    require("telescope").load_extension("projects")
-  end,
-  keys = {
-    { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "Projects" },
-    { "\\p", "<Cmd>Telescope projects<CR>", desc = "Projects" },
-  },
+	"ahmedkhalf/project.nvim",
+	opts = {},
+	event = "VeryLazy",
+	config = function(_, opts)
+		require("project_nvim").setup(opts)
+		require("telescope").load_extension("projects")
+	end,
+	keys = {
+		{ "<leader>sp", "<Cmd>Telescope projects<CR>", desc = "Projects" },
+		{ "\\p", "<Cmd>Telescope projects<CR>", desc = "Projects" },
+	},
 }
