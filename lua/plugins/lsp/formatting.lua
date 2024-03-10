@@ -9,7 +9,9 @@ return {
 		formatters_by_ft = {
 			python = { "isort", "black" },
 			markdown = { "prettier" },
+			ansible = { "prettier" },
 			yaml = { "prettier" },
+			json = { "prettier" },
 			javascript = { "prettier" },
 			typescript = { "prettier" },
 			javascriptreact = { "prettier" },
@@ -17,7 +19,6 @@ return {
 			svelte = { "prettier" },
 			css = { "prettier" },
 			html = { "prettier" },
-			json = { "prettier" },
 			graphql = { "prettier" },
 			lua = { "stylua" },
 		},
