@@ -61,7 +61,7 @@ keymap.set("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 keymap.set("n", "[b", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 keymap.set("n", "]b", "<cmd>bnext<cr>", { desc = "Next buffer" })
 keymap.set("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
-keymap.set("n", "<leader>`", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
+keymap.set("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Close buffer and Window" })
 
 -- Diagnostic
 keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
