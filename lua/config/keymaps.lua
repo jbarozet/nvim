@@ -10,7 +10,8 @@ keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit all" })
 keymap.set("n", "x", '"_x')
 
 -- Go to Notes
-keymap.set("n", "<leader>nt", ":cd ~/Notes/Tech | e PLANNING.md\n", { desc = "load personal notes" })
+keymap.set("n", "<leader>nt", ":cd ~/Notes/Tech | e ,\n", { desc = "load technical notes" })
+keymap.set("n", "<leader>nt", ":cd ~/Notes/Personal | e PLANNING.md\n", { desc = "load personal notes" })
 keymap.set("n", "<leader>nc", ":cd ~/Notes/Cisco | e PLANNING.md\n", { desc = "load Cisco notes" })
 
 -- better up/down
@@ -82,5 +83,5 @@ keymap.set("n", "<C-h>", "<Cmd>TmuxNavigateLeft<CR>", { silent = true })
 keymap.set("n", "<C-j>", "<Cmd>TmuxNavigateDown<CR>", { silent = true })
 keymap.set("n", "<C-k>", "<Cmd>TmuxNavigateUp<CR>", { silent = true })
 keymap.set("n", "<C-l>", "<Cmd>TmuxNavigateRight<CR>", { silent = true })
-keymap.set("n", "<C-\\>", "<Cmd>TmuxNavigateLastActive<CR>", { silent = true })
+-- keymap.set("n", "<C-\\>", "<Cmd>TmuxNavigateLastActive<CR>", { silent = true })
 keymap.set("n", "<C-Space>", "<Cmd>TmuxNavigateNavigateNext<CR>", { silent = true })
