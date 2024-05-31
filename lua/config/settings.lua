@@ -48,7 +48,7 @@ vim.o.autoindent = true -- copy indent from current line when starting new one
 vim.o.wrap = false -- disable line wrapping
 
 -- Folding
-vim.o.nofoldenable = true -- everything is open
+-- vim.o.nofoldenable = true -- everything is open
 vim.o.foldlevelstart = 99
 
 -- search settings
