@@ -32,7 +32,7 @@ return {
 				"terraformls",
 				"marksman",
 				"dockerls",
-				"tsserver",
+				"ts_ls",
 				"html",
 				"cssls",
 				"tailwindcss",
