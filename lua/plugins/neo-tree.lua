@@ -18,11 +18,16 @@ return {
 			popup_border_style = "rounded",
 			window = { position = "float", width = 30 },
 		})
-
+		--
 		-- vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal float<CR>", { desc = "Reveal file explorer float" })
 		-- vim.keymap.set("n", "<leader>e", ":Neotree filesystem float<CR>", { desc = "Toggle file explorer (float)" })
 
-		vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal float<CR>", { desc = "Reveal file explorer left" })
+		vim.keymap.set(
+			"n",
+			"<leader>e",
+			":Neotree filesystem reveal float<CR>",
+			{ desc = "Reveal file explorer (float)" }
+		)
 
 		-- vim.keymap.set("n", "<leader>ee", ":Neotree toggle<CR>", { desc = "Toggle file explorer" })
 		-- vim.keymap.set("n", "<leader>er", ":Neotree filesystem reveal left<CR>", { desc = "Reveal file explorer left" })
