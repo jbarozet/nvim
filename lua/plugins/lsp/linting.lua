@@ -8,7 +8,7 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			python = { "flake8" },
+			python = { "ruff" },
 			-- python = { "pylint" },
 			markdown = { "markdownlint" },
 			ansible = { "ansible_lint" }, -- NOTE: make sure to use ansible_lint and not ansible-lint
