@@ -63,3 +63,4 @@ vim.opt.iskeyword:append("-")
 
 -- -- set color scheme
 vim.cmd.colorscheme("catppuccin")
+-- vim.cmd.colorscheme("tokyonight")
