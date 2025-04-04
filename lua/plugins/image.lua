@@ -9,8 +9,8 @@ return {
     -- this plugin needs to run before anything else
     priority = 1001,
     opts = {
-      -- rocks = { "magick" },
-      hererocks = true, -- recommended if you do not have global installation of Lua 5.1.
+      rocks = { "magick" },
+      -- hererocks = true, -- recommended if you do not have global installation of Lua 5.1.
     },
   },
   {
