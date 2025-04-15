@@ -1,3 +1,8 @@
+-- Creates errors with typst files - so removing it
+if true then
+  return {}
+end
+
 return {
   {
     -- luarocks.nvim is a Neovim plugin designed to streamline the installation
