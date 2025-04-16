@@ -10,3 +10,11 @@
 -- vim.keymap.set("n", "<Left>", "<c-w>h")
 -- vim.keymap.set("n", "<Right>", "<c-w>l")
 vim.keymap.set("n", "<space>cp", "<cmd>TypstPreview<CR>", { desc = "[ ] Typst Preview" })
+
+vim.keymap.set("n", "<space>dt", function()
+  if vim.diagnostic.is_enabled() then
+    vim.diagnostic.hide()
+  else
+    vim.diagnostic.show()
+  end
+end)
