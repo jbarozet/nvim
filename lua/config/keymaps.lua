@@ -9,3 +9,4 @@
 -- vim.keymap.set("n", "<Down>", "<c-w>j")
 -- vim.keymap.set("n", "<Left>", "<c-w>h")
 -- vim.keymap.set("n", "<Right>", "<c-w>l")
+vim.keymap.set("n", "<space>cp", "<cmd>TypstPreview<CR>", { desc = "[ ] Typst Preview" })
