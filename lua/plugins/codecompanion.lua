@@ -1,35 +1,45 @@
 return {
-  "olimorris/codecompanion.nvim",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "nvim-treesitter/nvim-treesitter",
-  },
-  keys = {
-    { "<leader>a", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Open CodeCompanion Chat" },
-    { "<c-a>", "<cmd>CodeCompanionAction<cr>", desc = "Open CodeCompanion Action Palette" },
-  },
-  opts = {
-    strategies = {
-      chat = {
-        adapter = "ollama",
-      },
-      inline = {
-        adapter = "ollama",
-      },
-      agent = {
-        adapter = "ollama",
-      },
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+        "nvim-lua/plenary.nvim",
+        "nvim-treesitter/nvim-treesitter",
     },
-    adapters = {
-      ollama = function()
-        return require("codecompanion.adapters").extend("ollama", {
-          schema = {
-            model = {
-              default = "deepseek-coder-v2",
+    keys = {
+        {
+            "<leader>a",
+            "<cmd>CodeCompanionChat Toggle<CR>",
+            desc = "Open CodeCompanion Chat",
+            mode = { "n" } -- Assuming normal mode, add other modes if needed
+        },
+        {
+            "<c-a>",
+            "<cmd>CodeCompanionAction<CR>",
+            desc = "Open CodeCompanion Action Palette",
+            mode = { "n", "v" } -- Normal and visual modes
+        },
+    },
+    opts = {
+        strategies = {
+            chat = {
+                adapter = "ollama",
             },
-          },
-        })
-      end,
+            inline = {
+                adapter = "ollama",
+            },
+            agent = {
+                adapter = "ollama",
+            },
+        },
+        adapters = {
+            ollama = function()
+                return require("codecompanion.adapters").extend("ollama", {
+                    schema = {
+                        model = {
+                            default = "deepseek-coder-v2",
+                        },
+                    },
+                })
+            end,
+        },
     },
-  },
 }
