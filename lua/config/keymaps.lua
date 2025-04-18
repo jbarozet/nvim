@@ -18,3 +18,5 @@ vim.keymap.set("n", "<space>dt", function()
     vim.diagnostic.show()
   end
 end)
+
+vim.keymap.set("n", "<space>ct", ":!typst compile %<CR>")
