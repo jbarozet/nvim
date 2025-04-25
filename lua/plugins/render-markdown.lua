@@ -1,6 +1,6 @@
--- Define Catppuccin colors manually for headings
--- Try setting the highlights manually after Neovim starts with
--- `:lua vim.api.nvim_set_hl(0, "RenderMarkdownH1", {fg = "#fab387"})`
+-- https://github.com/MeanderingProgrammer/render-markdown.nvim
+-- Define Catppuccin colors manually for markdown headings
+
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   priority = 1000,
@@ -21,11 +21,11 @@ return {
     local color_fg = color26
     -- local color_sign = "#ebfafa"
     -- Define background colors
-    local color1_bg = color01
-    local color2_bg = color02
-    local color3_bg = color03
-    local color4_bg = color04
-    local color5_bg = color05
+    local color1_bg = color02
+    local color2_bg = color03
+    local color3_bg = color04
+    local color4_bg = color06
+    local color5_bg = color06
     local color6_bg = color06
     -- foreground colors
     local color1_fg = color11
