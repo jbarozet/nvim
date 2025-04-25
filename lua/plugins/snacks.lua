@@ -13,7 +13,7 @@ return {
   keys = {
     -- Iterate through incomplete tasks in Snacks_picker
     {
-      -- -- You can confirm in your teminal lamw26wmal with:
+      -- -- You can confirm in your teminal with:
       -- -- rg "^\s*-\s\[ \]" test-markdown.md
       "<leader>ti",
       function()
@@ -42,7 +42,7 @@ return {
       end,
       desc = "[i] Search for incomplete tasks",
     },
-    -- Iterate throuth completed tasks in Snacks_picker lamw26wmal
+    -- Iterate throuth completed tasks in Snacks_picker
     {
       "<leader>tc",
       function()
@@ -81,7 +81,8 @@ return {
       end,
       desc = "Branches",
     },
-    -- Navigate my buffers
+    -- Navigate my buffers - starts in normal mode
+    -- to filter buffers, enter insert mode
     {
       "<leader>,",
       function()
