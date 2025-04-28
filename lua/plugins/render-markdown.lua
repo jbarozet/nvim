@@ -1,5 +1,7 @@
--- https://github.com/MeanderingProgrammer/render-markdown.nvim
 -- Define Catppuccin colors manually for markdown headings
+-- https://github.com/MeanderingProgrammer/render-markdown.nvim
+-- https://github.com/linkarzu/dotfiles-latest
+-- https://github.com/linkarzu/dotfiles-latest/blob/main/neovim/neobean/lua/plugins/render-markdown.lua
 
 return {
   "MeanderingProgrammer/render-markdown.nvim",
@@ -63,8 +65,14 @@ return {
       setext = true,
       sign = true,
       signs = { "󰫎 " },
+      icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
+      -- icons = { "󰎤 ", "󰎧 ", "󰎪 ", "󰎭 ", "󰎱 ", "󰎳 " },
       position = "overlay",
       width = "block",
+      left_margin = 0,
+      left_pad = 0,
+      right_pad = 4,
+      min_width = 0,
       border = false,
       backgrounds = {
         "Headline1Bg",

@@ -82,7 +82,7 @@ return {
       desc = "Branches",
     },
     -- Navigate my buffers - starts in normal mode
-    -- to filter buffers, enter insert mode
+    -- NOTE: to filter buffers, enter insert mode
     {
       "<leader>,",
       function()
