@@ -6,17 +6,17 @@ return {
   },
   keys = {
     {
-      "<leader>a",
+      "<leader>ac",
       "<cmd>CodeCompanionChat Toggle<CR>",
       desc = "Open CodeCompanion Chat",
       mode = { "n" }, -- Assuming normal mode, add other modes if needed
     },
-    -- {
-    --     "<c-a>",
-    --     "<cmd>CodeCompanionAction<CR>",
-    --     desc = "Open CodeCompanion Action Palette",
-    --     mode = { "n", "v" } -- Normal and visual modes
-    -- },
+    {
+      "<leader>aa",
+      "<cmd>CodeCompanionAction<CR>",
+      desc = "Open CodeCompanion Action Palette",
+      mode = { "n", "v" }, -- Normal and visual modes
+    },
   },
   opts = {
     strategies = {
