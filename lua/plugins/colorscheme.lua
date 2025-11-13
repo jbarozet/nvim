@@ -16,7 +16,7 @@ return {
     opts = {
       flavour = "mocha",
       markdown = true,
-      transparent_background = true,
+      transparent_background = false,
       dim_inactive = {
         enabled = false, -- dims the background color of inactive window
         shade = "dark",
