@@ -43,7 +43,9 @@ return {
     "rebelot/kanagawa.nvim",
     opts = {
       transparent = true,
-      theme = "wave",
+      theme = "wave", -- the default heart-warming theme,
+      -- theme = "lotus", -- for when you're out in the open.
+      -- theme = "dragon", -- for those late-night sessions
       overrides = function(colors)
         return {
           ["@keyword.import"] = { fg = colors.palette.surimiOrange },
