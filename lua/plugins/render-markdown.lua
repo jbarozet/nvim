@@ -3,6 +3,10 @@
 -- https://github.com/linkarzu/dotfiles-latest
 -- https://github.com/linkarzu/dotfiles-latest/blob/main/neovim/neobean/lua/plugins/render-markdown.lua
 
+-- since this is just an example spec, don't actually load anything here and return an empty spec
+-- stylua: ignore
+-- if true then return {} end
+
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   priority = 1000,
