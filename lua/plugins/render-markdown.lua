@@ -11,7 +11,6 @@ return {
   "MeanderingProgrammer/render-markdown.nvim",
   enabled = false,
   priority = 1000,
-  enable = true,
   init = function()
     local color01 = "#b4befe" -- Catppuccin Lavender
     local color02 = "#f2cdcd" -- Catppuccin Flamingo

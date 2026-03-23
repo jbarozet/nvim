@@ -4,7 +4,5 @@
 
 local opt = vim.opt
 
--- opt.wrap = false -- Disable line wrap
-opt.wrap = true -- Enable line wrap
-opt.relativenumber = true -- Relative line numbers
--- vim.diagnostic.enable(false)
+opt.wrap = true
+opt.relativenumber = true
