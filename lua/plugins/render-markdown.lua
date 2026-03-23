@@ -9,6 +9,7 @@
 
 return {
   "MeanderingProgrammer/render-markdown.nvim",
+  enabled = false,
   priority = 1000,
   enable = true,
   init = function()
