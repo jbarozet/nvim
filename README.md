@@ -22,6 +22,21 @@ Since Neovim v0.11, vim.lsp.config and vim.lsp.enable allow configuring LSP serv
 - mason-lspconfig.nvim — bridges mason with nvim-lspconfig so installed servers are automatically wired up
 - mason-tool-installer.nvim — declarative ensure_installed list so all tools are auto-installed on startup without manual :MasonInstall
 
+## Markdown
+
+Markdown files have two complementary viewing modes:
+
+- [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) renders headings, lists, checkboxes, tables, code blocks, links, and callouts directly inside Neovim. Rendering is enabled by default in normal mode and the source remains visible while editing.
+- [live-preview.nvim](https://github.com/brianhuster/live-preview.nvim) opens a browser preview with live updates, synchronized scrolling, Mermaid diagrams, KaTeX math, and syntax-highlighted code blocks. It runs in Lua and does not require Node.js or Python.
+
+Keymaps:
+
+- `<leader>mr` — toggle in-buffer rendering for the current Markdown buffer
+- `<leader>mp` — start the browser preview for the current file
+- `<leader>mc` — close the browser preview server
+
+The underlying commands are `:RenderMarkdown buf_toggle`, `:LivePreview start`, and `:LivePreview close`. The browser server binds to `127.0.0.1` by default.
+
 ## Git integration
 
 gitsigns — inline, buffer-focused

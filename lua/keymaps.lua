@@ -246,6 +246,11 @@ map("n", "<leader>cf", function()
 	require("conform").format({ lsp_fallback = true })
 end, { desc = "Format File" })
 
+-- Markdown rendering and browser preview
+map("n", "<leader>mr", "<cmd>RenderMarkdown buf_toggle<cr>", { desc = "Toggle Markdown Render" })
+map("n", "<leader>mp", "<cmd>LivePreview start<cr>", { desc = "Start Markdown Preview" })
+map("n", "<leader>mc", "<cmd>LivePreview close<cr>", { desc = "Close Markdown Preview" })
+
 -- ═══════════════════════════════════════════════════════════
 -- DEVELOPMENT TOOLS
 -- ═══════════════════════════════════════════════════════════
