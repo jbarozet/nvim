@@ -327,5 +327,22 @@ map("n", "zk", "zckzOzz", { desc = "Close current fold when open. Always open pr
 -- Toggle line wrapping
 map("n", "<leader>tw", "<cmd>set wrap!<CR>", { desc = "Toggle Wrap", silent = true })
 
+-- Toggle spell-check language between French and US English
+map("n", "<leader>sl", function()
+	local language = vim.bo.spelllang == "fr_fr" and "en_us" or "fr_fr"
+
+	vim.opt_local.spelllang = language
+	vim.opt_local.spell = true
+	vim.notify("Spell language: " .. language)
+end, { desc = "Toggle Spell Language" })
+
+-- Toggle spell checking
+map("n", "<leader>ss", function()
+	local enabled = not vim.wo.spell
+
+	vim.opt_local.spell = enabled
+	vim.notify("Spell checking: " .. (enabled and "enabled" or "disabled"))
+end, { desc = "Toggle Spell Checking" })
+
 -- Fix spelling (picks first suggestion)
 map("n", "z0", "1z=", { desc = "Fix word under cursor" })
