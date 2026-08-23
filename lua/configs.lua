@@ -120,11 +120,13 @@ opt.shortmess:append({ W = true, I = true, c = true, C = true })
 vim.g.markdown_recommended_style = 0
 
 vim.filetype.add({
+	extension = {
+		mdx = "markdown",
+	},
 	pattern = {
 		["[jt]sconfig.*.json"] = "jsonc",
 	},
 })
-
 
 -- ═══════════════════════════════════════════════════════════
 --  Leader Key
@@ -135,4 +137,4 @@ vim.g.mapleader = " "
 -- New UI opt-in
 -- ═══════════════════════════════════════════════════════════
 
-require('vim._core.ui2').enable({})
+require("vim._core.ui2").enable({})
