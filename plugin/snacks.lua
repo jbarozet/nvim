@@ -14,22 +14,6 @@ local function navigate_left_from_explorer()
 	end
 end
 
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "snacks_picker_list", "snacks_picker_input" },
-	callback = function(event)
-		for _, mode in ipairs({ "n", "i" }) do
-			for _, lhs in ipairs({ "<BS>", "<C-h>", "\b" }) do
-				vim.keymap.set(mode, lhs, navigate_left_from_explorer, {
-					buffer = event.buf,
-					nowait = true,
-					silent = true,
-					desc = "Navigate left from Snacks Explorer/Tmux",
-				})
-			end
-		end
-	end,
-})
-
 require("snacks").setup({
 	bigfile = { enabled = true },
 	dashboard = { enabled = false },
