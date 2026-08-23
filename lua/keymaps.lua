@@ -45,10 +45,13 @@ end, { desc = "Delete Buffer" })
 -- ═══════════════════════════════════════════════════════════
 
 -- Move between windows with Ctrl+hjkl (like tmux)
-map("n", "<C-h>", "<C-w>h", { desc = "Go to Left Window", remap = true })
-map("n", "<C-j>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
-map("n", "<C-k>", "<C-w>k", { desc = "Go to Upper Window", remap = true })
-map("n", "<C-l>", "<C-w>l", { desc = "Go to Right Window", remap = true })
+-- Disabled because vim-tmux-navigator owns these mappings in plugin/tmux-navigator.lua.
+-- Keeping these active can trap navigation inside Neovim/Snacks Explorer instead
+-- of forwarding edge navigation back to tmux panes.
+-- map("n", "<C-h>", "<C-w>h", { desc = "Go to Left Window", remap = true })
+-- map("n", "<C-j>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
+-- map("n", "<C-k>", "<C-w>k", { desc = "Go to Upper Window", remap = true })
+-- map("n", "<C-l>", "<C-w>l", { desc = "Go to Right Window", remap = true })
 
 -- Resize windows with Ctrl+Shift+arrows (macOS friendly)
 map("n", "<C-S-Up>", "<cmd>resize +5<CR>", opts)
