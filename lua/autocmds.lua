@@ -2,13 +2,29 @@ local function augroup(name)
 	return vim.api.nvim_create_augroup("user_" .. name, { clear = true })
 end
 
--- Check if we need to reload the file when it changed
-vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
+-- Check if we need to reload files changed outside Neovim.
+-- With `autoread` enabled, `checktime` reloads unchanged buffers and leaves
+-- locally modified buffers alone.
+vim.api.nvim_create_autocmd({
+	"FocusGained",
+	"TermClose",
+	"TermLeave",
+	"BufEnter",
+	"CursorHold",
+	"CursorHoldI",
+}, {
 	group = augroup("checktime"),
 	callback = function()
 		if vim.o.buftype ~= "nofile" then
-			vim.cmd("checktime")
+			vim.cmd("silent! checktime")
 		end
+	end,
+})
+
+vim.api.nvim_create_autocmd("FileChangedShellPost", {
+	group = augroup("file_changed_shell"),
+	callback = function()
+		vim.notify("Reloaded file changed outside Neovim", vim.log.levels.INFO)
 	end,
 })
 
