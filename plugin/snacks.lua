@@ -14,6 +14,12 @@ local function navigate_left_from_explorer()
 	end
 end
 
+-- Terminal detection can time out behind tmux, especially with extended keys.
+-- Preserve tmux passthrough while telling Snacks which graphics protocol to use.
+if vim.env.TMUX and vim.env.KITTY_WINDOW_ID then
+	vim.env.SNACKS_KITTY = "true"
+end
+
 require("snacks").setup({
 	bigfile = { enabled = true },
 	dashboard = { enabled = false },
