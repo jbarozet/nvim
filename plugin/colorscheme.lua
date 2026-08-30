@@ -2,11 +2,15 @@
 -- COLOR SCHEME
 -- ═══════════════════════════════════════════════════════════
 
-vim.pack.add({ { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } })
-vim.cmd.colorscheme("catppuccin")
+-- Previous Catppuccin theme
+-- vim.pack.add({ { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } })
+-- vim.cmd.colorscheme("catppuccin")
+
+vim.pack.add({ { src = "https://github.com/rebelot/kanagawa.nvim", name = "kanagawa" } })
+vim.cmd.colorscheme("kanagawa-wave")
 
 -- Custom diagnostic line highlights must be set after the colorscheme
--- or catppuccin will overwrite them.
+-- or it will overwrite them.
 local palette = {
 	err  = "#51202A",
 	warn = "#3B3B1B",
